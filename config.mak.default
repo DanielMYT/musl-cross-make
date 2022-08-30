@@ -1,0 +1,19 @@
+# Default configuration for a statically linked toolchain targetting
+# x86_64-linux-musl using the latest software components.
+
+TARGET = x86_64-linux-musl
+
+BINUTILS_VER = 2.39
+GCC_VER = 12.2.0
+MUSL_VER = 1.2.3
+GMP_VER = 6.2.1
+MPC_VER = 1.2.1
+MPFR_VER = 4.1.0
+ISL_VER = 0.25
+LINUX_VER = 5.15.63
+
+DL_CMD = curl -C - -Ls -o
+
+COMMON_CONFIG += CC="x86_64-linux-musl-gcc -static --static" CXX="x86_64-linux-musl-g++ -static --static"
+COMMON_CONFIG += CFLAGS="-g0 -Os" CXXFLAGS="-g0 -Os" LDFLAGS="-s"
+BINUTILS_CONFIG += --disable-gprofng
