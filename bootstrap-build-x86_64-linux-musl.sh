@@ -15,7 +15,7 @@ fi
 tooldir="$(mktemp -d)"
 
 # Download the bootstrap toolchain.
-curl -L https://musl.cc/x86_64-linux-musl-native.tgz -o "${tooldir}"/bstrap.tgz
+curl -L http://more.musl.cc/11-20211120/x86_64-linux-musl/x86_64-linux-musl-native.tgz -o "${tooldir}"/bstrap.tgz
 
 # Extract the bootstrap toolchain.
 tar -xf "${tooldir}"/bstrap.tgz -C "${tooldir}" --strip-components=1
