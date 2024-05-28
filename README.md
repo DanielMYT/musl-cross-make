@@ -1,3 +1,26 @@
+DanielMYT's fork of musl-cross-make
+====
+
+This is a custom fork of the original musl-cross-make repository, for
+the purpose of providing the latest versions of GCC/Binutils/etc. that
+are not supported in the upstream project.
+
+This comes with the caveat of being inherantly less stable than the
+upstream toolchain builds. As a result, it is strongly recommended that
+you perform extensive testing on any software you compile using it. If
+you are at all unsure, **use the upstream version instead**.
+
+A custom build script is provided, to automatically specify that the
+latest software versions should be used, and to specify appropriate
+configure arguments. This script is used to provide the builds on
+the releases page. Though currently only x86_64 and aarch64 are
+supported. Cross-compiling is also unsupported using these scripts.
+
+To run the script and build a toolchain for your architecture, run
+`./bootstrap-build-linux.sh`.
+
+**THE REMAINDER OF THIS README FILE IS FROM UPSTREAM; IT STARTS HERE:**
+
 musl-cross-make
 ===============
 
