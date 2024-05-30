@@ -1,7 +1,7 @@
 # Default configuration for an up-to-date musl-based statically linked
 # toolchain targetting Linux systems.
 
-# !!! DO NOT USE OR EDIT THIS FILE DIRECTLY -- IT IS INCOMPLETE !!!
+# !!! DO NOT USE THIS FILE DIRECTLY -- IT IS INCOMPLETE !!!
 # The architecture has to be explicitly defined. The bootstrap-build-linux.sh
 # script does it automatically. If you manually run "make" instead, you must
 # make a copy of this file and then replace every %ARCH% placeholder entry
@@ -11,14 +11,14 @@
 
 TARGET = %ARCH%-linux-musl
 
-BINUTILS_VER = 2.41
-GCC_VER = 13.2.0
-MUSL_VER = 1.2.4
+BINUTILS_VER = 2.42
+GCC_VER = 14.1.0
+MUSL_VER = 1.2.5
 GMP_VER = 6.3.0
 MPC_VER = 1.3.1
 MPFR_VER = 4.2.1
 ISL_VER = 0.26
-LINUX_VER = 6.6.2
+LINUX_VER = 6.6.32
 
 DL_CMD = curl -C - -Ls -o
 
