@@ -1,6 +1,17 @@
 DanielMYT's fork of musl-cross-make
 ====
 
+> [!CAUTION]
+> This fork is no longer maintained, as the upstream project has now been
+> updated with hashes for the newest software versions, and I anticipate this
+> to continue into the future.
+>
+> I now maintain a set of scripts which produce nightly toolchain builds from
+> the upstream repository, and I recommend these to be used from now on. Check
+> them out [here](https://github.com/DanielMYT/musl-cross-make-nightly). This
+> nightly repository's README also contains a more detailed explanation behind
+> the discontinuation of this fork.
+
 This is a custom fork of the original musl-cross-make repository, for
 the purpose of providing the latest versions of GCC/Binutils/etc. that
 are not supported in the upstream project.
